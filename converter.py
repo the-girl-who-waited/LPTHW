@@ -1,6 +1,11 @@
 def addTwoThings(number0, number1):
     return number0 + number1
 
+
+def multiplyTwoThings(number0, number1):
+    return number0 * number1
+
+
 # that's because you're going too fast
 
 # test driven development
