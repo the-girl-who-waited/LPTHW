@@ -24,16 +24,19 @@ class oddOrEvenTest(unittest.TestCase):
         result = oddOrEven(7)
         self.assertEqual("odd", result)
 
-    def test_mathboy(self):
-        result = mathboy(7, 2)
-        self.assertEqual(5, result)
+    def test_mathBoyAdd(self):
+        result = mathBoyAdd(7, 2)
+        self.assertEqual(9, result)
 
-    def test_mathboy1(self):
-        result = mathboy(13, 7)
-        self.assertEqual(6, result)
+    def test_mathBoyAdd1(self):
+        result = mathBoyAdd(13, 7)
+        self.assertEqual(20, result)
 
-    def test_mathboy2(self):
-            result = mathboy(10, 7)
-            self.assertEqual(3, result)
+    def test_mathBoyAdd2(self):
+        result = mathBoyAdd(10, 7)
+        self.assertEqual(17, result)
 
+    def test_mathBoySubtract(self):
+        result = mathBoySubtract(10, 7)
+        self.assertEqual(3, result)
 
