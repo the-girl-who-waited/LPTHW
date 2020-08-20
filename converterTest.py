@@ -7,6 +7,15 @@ class converterTest(unittest.TestCase):
     def test_addTwoThings0(self):
         result = addTwoThings(5, 2)
         self.assertEqual(7, result)
+import unittest
+from converter import *
+
+
+class converterTest(unittest.TestCase):
+
+    def test_addTwoThings0(self):
+        result = addTwoThings(5, 2)
+        self.assertEqual(7, result)
 
     def test_addTwoThings1(self):
         result = addTwoThings(-5, 2)

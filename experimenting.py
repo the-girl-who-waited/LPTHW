@@ -42,3 +42,8 @@ def concatTwoStrings(string0, string1):
 
 concatTwoStrings("8", "238")
 
+ # I want this to multiply two stings
+def timesTwoStrings(string0, string1):
+    print(string0 + " " * string1)
+
+timesTwoStrings("6", "2")

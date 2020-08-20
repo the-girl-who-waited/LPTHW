@@ -14,3 +14,9 @@ def oddOrEven(number):
     else :
         return "odd"
 # elif will only be read if the previous conditional reads false
+
+def mathboy(number0, number1):
+    return number0 + number1
+
+def mathboy(number0, number1):
+    return number0 - number1
