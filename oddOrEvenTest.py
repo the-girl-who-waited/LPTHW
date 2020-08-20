@@ -40,3 +40,14 @@ class oddOrEvenTest(unittest.TestCase):
         result = mathBoySubtract(10, 7)
         self.assertEqual(3, result)
 
+    def test_fbLite(self):
+        result = fbLite(9)
+        self.assertEqual(result, "fizz")
+
+    def test_fblite1(self):
+        result = fbLite(4)
+        self.assertEqual(result,'buzz')
+
+    def test_fblite2(self):
+        result = fbLite("pie")
+        self.assertEqual(result,'NAN')

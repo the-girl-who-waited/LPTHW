@@ -20,3 +20,11 @@ def mathBoyAdd(number0, number1):
 
 def mathBoySubtract(number0, number1):
     return number0 - number1
+
+def fbLite(number):
+    if oddOrEven(number) == "odd":
+        return "fizz"
+    elif oddOrEven(number) == "even":
+        return "buzz"
+    elif oddOrEven(number) == "NAN":
+        return oddOrEven(number)
