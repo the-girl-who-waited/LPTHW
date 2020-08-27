@@ -60,3 +60,6 @@ class oddOrEvenTest(unittest.TestCase):
         result = lengthCheck("cakes")
         self.assertEqual(result, 'jerk')
 
+    def test_lengthCheck2(self):
+        result = lengthCheck("")
+        self.assertEqual(result, "neither")

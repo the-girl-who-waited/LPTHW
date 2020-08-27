@@ -36,3 +36,5 @@ def lengthCheck(string): # we give the function a name and a perameter
         return "joe"
     elif decided == "odd":
         return "jerk"
+    else:
+        return "neither"
