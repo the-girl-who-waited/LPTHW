@@ -50,4 +50,13 @@ class oddOrEvenTest(unittest.TestCase):
 
     def test_fblite2(self):
         result = fbLite("pie")
-        self.assertEqual(result,'NAN')
+        self.assertEqual(result, 'NAN')
+
+    def test_lengthCheck(self):
+        result = lengthCheck("cake")
+        self.assertEqual(result, 'joe')
+
+    def test_lengthCheck1(self):
+        result = lengthCheck("cakes")
+        self.assertEqual(result, 'jerk')
+
