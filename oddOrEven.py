@@ -29,8 +29,8 @@ def fbLite(number):
     elif oddOrEven(number) == "NAN":
         return oddOrEven(number)
 
-def lengthCheck(string): # we give the function a name and a perameter
-    length = len(string) # we are defining a variable by calling len(string)
+def lengthCheck(input): # we give the function a name and a perameter
+    length = len(str(input)) # we are defining a variable by calling len(string)
     decided = oddOrEven(length) #  defining a variable by calling oddOrEven(length)
     if decided == "even": # if oddOrEven returns "even"
         return "joe"
