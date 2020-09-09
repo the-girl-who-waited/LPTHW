@@ -1,2 +1,2 @@
-H = 20
-print(20)
+string = "mary had a little lamb"
+print(string.count('a'))

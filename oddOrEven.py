@@ -30,7 +30,8 @@ def fbLite(number):
         return oddOrEven(number)
 
 def lengthCheck(input): # we give the function a name and a perameter
-    length = len(str(input)) # we are defining a variable by calling len(string)
+    length = len(str(input)) #we run str on input then we run len then we assign a var name
+    
     decided = oddOrEven(length) #  defining a variable by calling oddOrEven(length)
     if decided == "even": # if oddOrEven returns "even"
         return "joe"
@@ -38,3 +39,7 @@ def lengthCheck(input): # we give the function a name and a perameter
         return "jerk"
     else:
         return "neither"
+
+def characterFrequency(string, char):
+    return string.count(char)
+
