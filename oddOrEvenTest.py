@@ -70,3 +70,36 @@ class oddOrEvenTest(unittest.TestCase):
         self.assertEqual(result, 3)
 
 
+    def test_returnIndex(self):
+        arrayToCheck = ["things", "stuff", "men", "broads"]
+        result = returnIndex(arrayToCheck, 0) # "things"
+        self.assertEqual(result, "things")
+
+    def test_reorderArray0(self):
+        arrayToCheck = [10, 238, 5, 9, 39]
+        result = reorderArray(arrayToCheck, "asc")
+        self.assertEqual(result, [5, 9, 10, 39, 238])
+
+    def test_reorderArray1(self):
+        arrayToCheck = [10, 238, 5, 9, 39]
+        result = reorderArray(arrayToCheck, "desc")
+        self.assertEqual([238, 39, 10, 9, 5], result)# thing, and then result
+
+    def test_reorderArray2(self):
+        arrayToCheck = ["b", "o", "o", "b", "s"]
+        result = reorderArray(arrayToCheck, "asc")
+        self.assertEqual(["b", "b", "o", "o", "s"], result)
+
+    def test_reorderArray3(self):
+        arrayToCheck = ["j", "e", "r", "k"]
+        result = reorderArray(arrayToCheck, "desc")
+        self.assertEqual(["r", "k", "j", "e"], result)
+
+    def test_reorderLength(self):
+        arrayToCheck = ["a", "schmo", "dingle", "waterCloset"] #arrays MUST BE homogenous
+        result = reorderLength(arrayToCheck, "desc")
+        self.assertEqual(["waterCloset", "dingle", "schmo", "a"], result)
+
+
+        #[["a"], ["x"], ["n"]] before
+        #[["a"], ["n"], ["x"]] after
