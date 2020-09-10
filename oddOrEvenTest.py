@@ -100,6 +100,7 @@ class oddOrEvenTest(unittest.TestCase):
         result = reorderLength(arrayToCheck, "desc")
         self.assertEqual(["waterCloset", "dingle", "schmo", "a"], result)
 
-
-        #[["a"], ["x"], ["n"]] before
-        #[["a"], ["n"], ["x"]] after
+    def test_reorderArray4(self):
+        arrayToCheck = [["a"], ["x"], ["n"]]
+        result = reorderArray(arrayToCheck, "asc")
+        self.assertEqual([["a"], ["n"], ["x"]],result)
