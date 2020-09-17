@@ -3,7 +3,7 @@ from oddOrEven import *
 
 
 class oddOrEvenTest(unittest.TestCase):
-# unresolved referance = refering to something not there
+    # unresolved referance = refering to something not there
     def test_oddOrEven(self):
         result = oddOrEven(5)
         self.assertEqual("odd", result)
@@ -46,7 +46,7 @@ class oddOrEvenTest(unittest.TestCase):
 
     def test_fblite1(self):
         result = fbLite(4)
-        self.assertEqual(result,'buzz')
+        self.assertEqual(result, 'buzz')
 
     def test_fblite2(self):
         result = fbLite("pie")
@@ -64,15 +64,13 @@ class oddOrEvenTest(unittest.TestCase):
         result = lengthCheck("")
         self.assertEqual(result, "neither")
 
-
     def test_characterFrequency(self):
         result = characterFrequency("asapam", "a")
         self.assertEqual(result, 3)
 
-
     def test_returnIndex(self):
         arrayToCheck = ["things", "stuff", "men", "broads"]
-        result = returnIndex(arrayToCheck, 0) # "things"
+        result = returnIndex(arrayToCheck, 0)  # "things"
         self.assertEqual(result, "things")
 
     def test_reorderArray0(self):
@@ -83,7 +81,7 @@ class oddOrEvenTest(unittest.TestCase):
     def test_reorderArray1(self):
         arrayToCheck = [10, 238, 5, 9, 39]
         result = reorderArray(arrayToCheck, "desc")
-        self.assertEqual([238, 39, 10, 9, 5], result)# thing, and then result
+        self.assertEqual([238, 39, 10, 9, 5], result)  # thing, and then result
 
     def test_reorderArray2(self):
         arrayToCheck = ["b", "o", "o", "b", "s"]
@@ -96,11 +94,27 @@ class oddOrEvenTest(unittest.TestCase):
         self.assertEqual(["r", "k", "j", "e"], result)
 
     def test_reorderLength(self):
-        arrayToCheck = ["a", "schmo", "dingle", "waterCloset"] #arrays MUST BE homogenous
+        arrayToCheck = ["a", "schmo", "dingle", "waterCloset"]  # arrays MUST BE homogenous
         result = reorderLength(arrayToCheck, "desc")
         self.assertEqual(["waterCloset", "dingle", "schmo", "a"], result)
 
     def test_reorderArray4(self):
         arrayToCheck = [["a"], ["x"], ["n"]]
         result = reorderArray(arrayToCheck, "asc")
-        self.assertEqual([["a"], ["n"], ["x"]],result)
+        self.assertEqual([["a"], ["n"], ["x"]], result)
+
+    def test_doubleOrder(self):
+        arrayToCheck = [["n", "x", "b"], ["y", "d", "c"], ["z", "g", "e"]]
+        result = doubleOrder(arrayToCheck, "asc")
+        self.assertEqual([["b", "n", "x"], ["c", "d", "y"], ["e", "g", "z"]], result)
+
+    def test_doubleOrder1(self):
+        arrayToCheck = [["n", "x", "b"], ["y", "d", "c"], ["z", "g", "e"]]
+        result = doubleOrder(arrayToCheck, "desc")
+        self.assertEqual([["e", "g", "z"], ["c", "d", "y"], ["b", "n", "x"]], result)
+
+    def test_addTwo(self):
+        arrayToCheck = [1, 2, 3, 4, 5]
+        result = addTwo(arrayToCheck)
+        self.assertEqual([3, 4, 5, 6, 7], result)
+

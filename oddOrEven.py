@@ -66,3 +66,20 @@ def reorderLength(array, order):
         return sorted(array, key=len)
     elif order == "desc":
         return sorted(array, key=len, reverse=True)
+
+
+def doubleOrder(arrayOfArrays, order):
+    orderedArray = []
+    for subArray in arrayOfArrays:
+        orderedArray.append(sorted(subArray))
+    if order == "asc":
+        return sorted(orderedArray)
+    elif order == "desc":
+        return sorted(orderedArray, reverse=True)
+
+
+def addTwo(arrayOfInts):
+    newArray = []
+    for integer in arrayOfInts:
+        newArray.append(integer + 2)
+    return newArray
