@@ -118,3 +118,7 @@ class oddOrEvenTest(unittest.TestCase):
         result = addTwo(arrayToCheck)
         self.assertEqual([3, 4, 5, 6, 7], result)
 
+    def test_findLargest(self):
+        arrayToCheck = [3, 5, 1, 4, 2, 10]
+        result = findLargest(arrayToCheck)
+        self.assertEqual(10, result)

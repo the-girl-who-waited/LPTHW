@@ -68,14 +68,15 @@ def reorderLength(array, order):
         return sorted(array, key=len, reverse=True)
 
 
-def doubleOrder(arrayOfArrays, order):
-    orderedArray = []
-    for subArray in arrayOfArrays:
+def doubleOrder(arrayOfArrays, order): # gave the function a name and gave it two arguments
+    orderedArray = [] # defined a variable with an empty array
+    for subArray in arrayOfArrays: # has the function look at one small section of the array
         orderedArray.append(sorted(subArray))
-    if order == "asc":
-        return sorted(orderedArray)
-    elif order == "desc":
-        return sorted(orderedArray, reverse=True)
+    # tells the function to put a small section of the array back into the larger array in the given order
+    if order == "asc": # if the order given in the variable is ascending then do something
+        return sorted(orderedArray) # return an array sorted in ascending order
+    elif order == "desc": # if the variable does not say ascending, its descending do something
+        return sorted(orderedArray, reverse=True) # return an array ordered in the reverse of ascending order
 
 
 def addTwo(arrayOfInts):
@@ -83,3 +84,7 @@ def addTwo(arrayOfInts):
     for integer in arrayOfInts:
         newArray.append(integer + 2)
     return newArray
+
+
+def findLargest(arrayOfInts):
+    return sorted(arrayOfInts)[-1]
