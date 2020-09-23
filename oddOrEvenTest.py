@@ -122,3 +122,8 @@ class oddOrEvenTest(unittest.TestCase):
         arrayToCheck = [3, 5, 1, 4, 2, 10]
         result = findLargest(arrayToCheck)
         self.assertEqual(10, result)
+
+    def test_removeSpaces(self):
+        spaced = "thirty five times"
+        result = removeSpaces(spaced)
+        self.assertEqual("thirtyfivetimes", result)

@@ -88,3 +88,13 @@ def addTwo(arrayOfInts):
 
 def findLargest(arrayOfInts):
     return sorted(arrayOfInts)[-1]
+
+
+def removeSpaces(string):
+    nuString = ""
+    for char in string:
+        if char != " ":
+            nuString += char # nuString = nuString + string[char]
+            print(nuString)
+    return nuString
+
