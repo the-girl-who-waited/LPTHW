@@ -40,6 +40,14 @@ class oddOrEvenTest(unittest.TestCase):
         result = mathBoySubtract(10, 7)
         self.assertEqual(3, result)
 
+    def test_isEven(self):
+        result = isEven(2)
+        self.assertEqual(result, True)
+
+    def test_isEven0(self):
+        result = isEven(3)
+        self.assertEqual(result, None)
+
     def test_fbLite(self):
         result = fbLite(9)
         self.assertEqual(result, "fizz")
@@ -47,10 +55,6 @@ class oddOrEvenTest(unittest.TestCase):
     def test_fblite1(self):
         result = fbLite(4)
         self.assertEqual(result, 'buzz')
-
-    def test_fblite2(self):
-        result = fbLite("pie")
-        self.assertEqual(result, 'NAN')
 
     def test_lengthCheck(self):
         result = lengthCheck("cake")
@@ -127,3 +131,31 @@ class oddOrEvenTest(unittest.TestCase):
         spaced = "thirty five times"
         result = removeSpaces(spaced)
         self.assertEqual("thirtyfivetimes", result)
+
+    def test_splitArray(self):
+        toSplit = [1, 2, 3, 4, 5, 6] # [4, 5, 6]
+        result = splitArray(toSplit)
+        self.assertEqual([[1, 2, 3], [4, 5, 6]], result)
+
+    def test_evenChars(self):
+        result = evenChars("junk")
+        self.assertEqual(True, result)
+
+    def test_evenCharsOdd(self):
+        result = evenChars("3junk")
+        self.assertEqual(None, result)
+
+    def test_truthy(self):
+        even = "junk"
+        result = truthy(even)
+        self.assertEqual("it's even", result)
+
+    def test_truthyNone(self):
+        even = "odd3"
+        result = truthy(even)
+        self.assertEqual("it's even", result)
+
+    def test_truthyOdd(self):
+        even = "odd"
+        result = truthy(even)
+        self.assertEqual("meh", result)
