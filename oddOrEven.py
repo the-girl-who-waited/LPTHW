@@ -82,9 +82,10 @@ def addTwo(arrayOfInts):
         newArray.append(integer + 2)
     return newArray
 
-
-def findLargest(arrayOfInts):
-    return sorted(arrayOfInts)[-1]
+def smallAndLarge(array):
+    largest = sorted(array)[-1]
+    smallest = sorted(array)[0]
+    return [smallest, largest]
 
 
 def removeSpaces(string):
@@ -119,6 +120,8 @@ def truthy(string):
 # truthiness > does it exist?
 # boolean means true or false yes / no
 
+
+# indenting? USE TAB, NOT THE SPACE BAR
 # 3 % 2 evalutes into 1
 # print(1 == 2) # assertion : we are asking the computer to evaluate the "truthiness"
 # print("jerk" == "jerk")
@@ -134,3 +137,4 @@ def truthy(string):
 # 1. parenthesis that contain parameters with good names(number0, number1)
 # 2. a body (what does the function DO when you call it)
 # 3. a call to activate it
+# mutation in place is bad there is no godly reason for it.
