@@ -1,3 +1,6 @@
+import random
+
+
 def oddOrEven(number):
     if isinstance(number, str):
         return "NAN"
@@ -117,10 +120,24 @@ def truthy(string):
     else :
         return "meh"
 
+
+
+def coinFlip(numberOfFlips):
+    heads = 0
+    tails = 0
+    for num in range(numberOfFlips):
+        if random.randint(0, 1) == 0:
+            heads += 1
+        else:
+            tails += 1
+    print("flips", numberOfFlips, "heads", heads, "tails", tails)
+
+coinFlip(100)
+
 # truthiness > does it exist?
 # boolean means true or false yes / no
-
-
+# consequent is the action that takes place iif 118 is truthy
+# line 129 is also a consequent
 # indenting? USE TAB, NOT THE SPACE BAR
 # 3 % 2 evalutes into 1
 # print(1 == 2) # assertion : we are asking the computer to evaluate the "truthiness"
@@ -131,10 +148,12 @@ def truthy(string):
 # if False > move to the next conditional
 # if something is True, it can't be False
 # if something is False, it can't be True
-
+#  range does not require a start point, it goes up to but does not include the end point
 # functions need four things
 # 0. a GOOD NAME
 # 1. parenthesis that contain parameters with good names(number0, number1)
 # 2. a body (what does the function DO when you call it)
 # 3. a call to activate it
 # mutation in place is bad there is no godly reason for it.
+# random.randint(0, 1) will return 0 or 1 every time its called
+# loops
