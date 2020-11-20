@@ -132,8 +132,19 @@ def coinFlip(numberOfFlips):
             tails += 1
     print("flips", numberOfFlips, "heads", heads, "tails", tails)
 
-coinFlip(100)
+def rockPaper(player1, player2):
+    if player2 == "paper":
+        if player1 == "rock": # if true and if true both have to be truthy
+            return "paper wins"
+        else:
+            return "loser"
+    else:
+        return "jerk"
 
+
+
+# if 136 passes falsey, line137 will not be evaluated.
+# when making a second if statement, the second has to be indented further
 # truthiness > does it exist?
 # boolean means true or false yes / no
 # consequent is the action that takes place iif 118 is truthy
