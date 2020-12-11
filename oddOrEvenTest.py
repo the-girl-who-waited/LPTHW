@@ -171,3 +171,4 @@ class oddOrEvenTest(unittest.TestCase):
     def test_rockPaper1(self):
         result = rockPaper("balls", "paper")
         self.assertEqual("loser", result)
+

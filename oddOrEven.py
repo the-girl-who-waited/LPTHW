@@ -85,6 +85,7 @@ def addTwo(arrayOfInts):
         newArray.append(integer + 2)
     return newArray
 
+
 def smallAndLarge(array):
     largest = sorted(array)[-1]
     smallest = sorted(array)[0]
@@ -117,9 +118,8 @@ def evenChars(string):
 def truthy(string):
     if evenChars(string):  # Truthy / Falsey
         return "it's even"
-    else :
+    else:
         return "meh"
-
 
 
 def coinFlip(numberOfFlips):
@@ -132,9 +132,10 @@ def coinFlip(numberOfFlips):
             tails += 1
     print("flips", numberOfFlips, "heads", heads, "tails", tails)
 
+
 def rockPaper(player1, player2):
     if player2 == "paper":
-        if player1 == "rock": # if true and if true both have to be truthy
+        if player1 == "rock":  # if true and if true both have to be truthy
             return "paper wins"
         else:
             return "loser"
@@ -142,7 +143,13 @@ def rockPaper(player1, player2):
         return "jerk"
 
 
+def diceRoll():
+    int = random.randint(1, 6)
+    print("dye rolled as", int)
 
+diceRoll()
+
+# a variable definition needs 2 things a name and a body
 # if 136 passes falsey, line137 will not be evaluated.
 # when making a second if statement, the second has to be indented further
 # truthiness > does it exist?
