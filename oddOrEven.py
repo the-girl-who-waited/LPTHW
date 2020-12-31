@@ -134,22 +134,26 @@ def coinFlip(numberOfFlips):
 
 
 def rockPaper(player1, player2):
-    if player2 == "paper":
-        if player1 == "rock":  # if true and if true both have to be truthy
-            return "paper wins"
-        else:
-            return "loser"
-    else:
-        return "jerk"
+    arrayOfChoices = ["rock", "paper", "scissors"]
+    #pcChoice = random.choice(arrayOfChoices)
+    if player1 == "rock":
+        if player2 == "paper": # this means and if
+            return "paper"
+        elif player2 == "scissors":
+            return "rock"
+        elif player2 == "rock":
+            return "tie"
+    elif player1 == "paper":
+
 
 
 def diceRoll():
     int = random.randint(1, 6)
     print("dye rolled as", int)
 
-diceRoll()
 
-# a variable definition needs 2 things a name and a body
+
+# a variable definition needs 2 things a name and a body 
 # if 136 passes falsey, line137 will not be evaluated.
 # when making a second if statement, the second has to be indented further
 # truthiness > does it exist?
@@ -175,3 +179,30 @@ diceRoll()
 # mutation in place is bad there is no godly reason for it.
 # random.randint(0, 1) will return 0 or 1 every time its called
 # loops
+# elif just means otherwise if
+
+"""
+if mcdonalds is open
+    if burger
+        order burger
+    elif hotAndSpicy
+        order hotAndSpicy
+    elif salad
+        order salad
+elif kfc is open (openness has to be truthy)
+    if threePieceCombo
+        order combo
+    elif biscuits
+        order biscuits
+    elif bucket
+        order bucket
+elif pizzaHut is open
+    if slice
+        order slice
+    elif pie
+        order pie
+    elif buffet
+        order buffet
+else
+    go hungry
+"""
