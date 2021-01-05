@@ -160,43 +160,8 @@ class oddOrEvenTest(unittest.TestCase):
         result = truthy(even)
         self.assertEqual("meh", result)
 
-    def test_rockPaper(self):
-        result = rockPaper("rock", "paper")
-        self.assertEqual("paper", result)
-
-    def test_rockPaper0(self):
-        result = rockPaper("rock", "scissors")
-        self.assertEqual("rock", result)
-
-    def test_rockPaper1(self):
-        result = rockPaper("rock", "rock")
-        self.assertEqual("tie", result)
 
 
-    def test_rockPaper2(self):
-        result = rockPaper("paper", "rock")
-        self.assertEqual("rock", result)
-
-    def test_rockPaper3(self):
-        result = rockPaper("paper", "scissors")
-        self.assertEqual("paper", result)
-
-
-    def test_rockPaper4(self):
-        result = rockPaper("paper", "paper")
-        self.assertEqual("tie", result)
-
-    def test_rockPaper5(self):
-        result = rockPaper("scissors", "paper")
-        self.assertEqual("scissors", result)
-
-    def test_rockPaper6(self):
-        result = rockPaper("scissors", "rock")
-        self.assertEqual("rock", result)
-
-    def test_rockPaper7(self):
-        result = rockPaper("scissors", "scissors")
-        self.assertEqual("tie", result)
 
 
 

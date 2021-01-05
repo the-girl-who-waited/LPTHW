@@ -133,9 +133,11 @@ def coinFlip(numberOfFlips):
     print("flips", numberOfFlips, "heads", heads, "tails", tails)
 
 
-def rockPaper(player1, player2):
+def rockPaperScissors(player1):
     arrayOfChoices = ["rock", "paper", "scissors"]
-    #pcChoice = random.choice(arrayOfChoices)
+    player2 = random.choice(arrayOfChoices)
+    print("player1 chose", player1)
+    print("player2 chose", player2)
     if player1 == "rock":
         if player2 == "paper": # this means and if
             return "paper"
@@ -158,7 +160,7 @@ def rockPaper(player1, player2):
         elif player2 == "scissors":
             return "tie"
 
-
+print(rockPaperScissors("rock"))
 
 def diceRoll():
     int = random.randint(1, 6)
