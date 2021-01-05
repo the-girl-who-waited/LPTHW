@@ -144,6 +144,19 @@ def rockPaper(player1, player2):
         elif player2 == "rock":
             return "tie"
     elif player1 == "paper":
+        if player2 == "rock":
+            return "rock"
+        elif player2 == "scissors":
+            return "paper"
+        elif player2 == "paper":
+            return "tie"
+    elif player1 == "scissors":
+        if player2 == "paper":
+            return "scissors"
+        elif player2 == "rock":
+            return "rock"
+        elif player2 == "scissors":
+            return "tie"
 
 
 

@@ -172,9 +172,34 @@ class oddOrEvenTest(unittest.TestCase):
         result = rockPaper("rock", "rock")
         self.assertEqual("tie", result)
 
+
     def test_rockPaper2(self):
         result = rockPaper("paper", "rock")
+        self.assertEqual("rock", result)
+
+    def test_rockPaper3(self):
+        result = rockPaper("paper", "scissors")
         self.assertEqual("paper", result)
+
+
+    def test_rockPaper4(self):
+        result = rockPaper("paper", "paper")
+        self.assertEqual("tie", result)
+
+    def test_rockPaper5(self):
+        result = rockPaper("scissors", "paper")
+        self.assertEqual("scissors", result)
+
+    def test_rockPaper6(self):
+        result = rockPaper("scissors", "rock")
+        self.assertEqual("rock", result)
+
+    def test_rockPaper7(self):
+        result = rockPaper("scissors", "scissors")
+        self.assertEqual("tie", result)
+
+
+
 
 """
 rock, paper
