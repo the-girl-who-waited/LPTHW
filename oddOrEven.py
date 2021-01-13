@@ -46,8 +46,12 @@ def lengthCheck(stringToCheck):  # we give the function a name and a perameter
         return "neither"
 
 
-def characterFrequency(string, char):
-    return string.count(char)  # native function count can only take strings
+def characterFrequency(string, target):
+    targetCount = 0
+    for char in string:
+        if char == target:
+            targetCount += 1
+    return targetCount
 
 
 def returnIndex(array, idxToCheck):

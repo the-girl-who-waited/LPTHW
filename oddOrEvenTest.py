@@ -69,8 +69,8 @@ class oddOrEvenTest(unittest.TestCase):
         self.assertEqual(result, "neither")
 
     def test_characterFrequency(self):
-        result = characterFrequency("asapam", "a")
-        self.assertEqual(result, 3)
+        result = characterFrequency("ggeggygg", "g")
+        self.assertEqual(result, 6)
 
     def test_returnIndex(self):
         arrayToCheck = ["things", "stuff", "men", "broads"]
