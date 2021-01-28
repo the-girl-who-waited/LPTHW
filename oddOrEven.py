@@ -22,18 +22,6 @@ def mathBoySubtract(number0, number1):
     return number0 - number1
 
 
-def isEven(int):
-    if int % 2 == 0:  # True
-        return True
-
-
-def fbLite(number):
-    if isEven(number):
-        return "buzz"
-    else:
-        return "fizz"
-
-
 def lengthCheck(stringToCheck):  # we give the function a name and a perameter
     length = len(str(stringToCheck))  # we run str on input then we run len then we assign a var name
 
@@ -170,8 +158,26 @@ def diceRoll():
     int = random.randint(1, 6)
     print("dye rolled as", int)
 
+def isEven(int):
+    if int % 2 == 0:
+        return True
+    else:
+        return False
 
+def printEveness(int):
+    if int % 2 == 0:
+        return "even"
+    else:
+        return "the number 7 is odd"
 
+def oddIndex(string):
+    newString = ""
+    for i in range(0, len(string)):
+        if i % 2 != 0:
+            newString += string[i]
+    return str(newString)
+
+# the most important thing to know about a program is what it takes and what it returns
 # a variable definition needs 2 things a name and a body 
 # if 136 passes falsey, line137 will not be evaluated.
 # when making a second if statement, the second has to be indented further

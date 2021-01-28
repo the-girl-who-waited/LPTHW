@@ -40,22 +40,6 @@ class oddOrEvenTest(unittest.TestCase):
         result = mathBoySubtract(10, 7)
         self.assertEqual(3, result)
 
-    def test_isEven(self):
-        result = isEven(2)
-        self.assertEqual(result, True)
-
-    def test_isEven0(self):
-        result = isEven(3)
-        self.assertEqual(result, None)
-
-    def test_fbLite(self):
-        result = fbLite(9)
-        self.assertEqual(result, "fizz")
-
-    def test_fblite1(self):
-        result = fbLite(4)
-        self.assertEqual(result, 'buzz')
-
     def test_lengthCheck(self):
         result = lengthCheck("cake")
         self.assertEqual(result, 'joe')
@@ -160,10 +144,21 @@ class oddOrEvenTest(unittest.TestCase):
         result = truthy(even)
         self.assertEqual("meh", result)
 
+    def test_isEven(self):
+        result = isEven(6)
+        self.assertEqual(True, result)
 
+    def test_isEven1(self):
+        result = isEven(7)
+        self.assertEqual(False, result)
 
+    def test_printEveness(self):
+        result = printEveness(7)
+        self.assertEqual("the number 7 is odd", result)
 
-
+    def test_oddIndex(self):
+        result = oddIndex("balls")
+        self.assertEqual("al", result)
 
 
 """
