@@ -177,6 +177,11 @@ def oddIndex(string):
             newString += string[i]
     return str(newString)
 
+
+# for i in range(0, 50):
+    print("balls")
+
+
 # the most important thing to know about a program is what it takes and what it returns
 # a variable definition needs 2 things a name and a body 
 # if 136 passes falsey, line137 will not be evaluated.
